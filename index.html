@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grants</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link src="script.js" type="text/javascript"></script>
+</head>
+<body>
+  <!--Barra de navegacion/ botones-->
+  <nav class="navbar">
+    <div class="navbar-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="logo">
+  </div>
+    <ul class="navbar-menu" id="menu">
+      <li><a href="../marmoreria/grants.html">Inicio</a></li>
+      <li><a href="#footer">Redes sociais</a></li>
+      <li><a href="https://api.whatsapp.com/send?phone=555189559694"id="openInSameWindow">Faça seu pedido</a></li>
+    </ul>
+
+  </nav>
+
+  <div class="contenedor-flex">
+    <div class="presentacion">
+      <img src="../marmoreria/piedras/grantes_logo.png" alt="Serviços de qualidade">
+      <h2>Com mais de 20 anos de experiência</h2>
+      <p>Oferecemos serviços de qualidade.</p>
+      <p>Fazemos os seguintes trabalhos, cozinhas, louças, lavanderias, formas para fornos, lápides, escadas, e muito mais, estamos localizados na região do rs, esteio-brasil.</p>
+    </div>
+
+    <div class="slider">
+      <div class="slide">
+        <img src="../marmoreria/mesa.jpg" alt="Imagen 1" onclick="cambiarSlide(0)">
+      </div>
+      <div class="slide">
+        <img src="../marmoreria/piedras/2022-12-27 (3).jpg" alt="Imagen 2" onclick="cambiarSlide(1)">
+      </div>
+      <div class="slide">
+        <img src="../marmoreria/piedras/2022-12-27 (7).jpg" alt="Imagen 3" onclick="cambiarSlide(2)">
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+  <section class="seccion-imagenes">
+    <!--imágenes personalizadas -->
+    <div class="grid-container">
+      <div class="grid-item"><img src="../marmoreria/piedras/azulejo-marmol-negro-marquina.jpg" alt="Imagen 1"></div>
+      <div class="grid-item"><img src="../marmoreria/piedras/azulejo-marmol-color-marfil-clasico.jpg" alt="Imagen 2"></div>
+      <div class="grid-item"><img src="../marmoreria/piedras/baldosa-marmol-color-marfil-coto.jpg" alt="Imagen 3"></div>
+      <div class="grid-item"><img src="../marmoreria/piedras/baldosa-marmol-color-verde-indio.jpg" alt="Imagen 4"></div>
+      <div class="grid-item"><img src="../marmoreria/piedras/baldosa-pizarra-multicolor.jpeg" alt="Imagen 5"></div>
+      <div class="grid-item"><img src="../marmoreria/piedras/losa-travertino-color-rojo.jpeg" alt="Imagen 6"></div>
+      <div class="grid-item"><img src="../marmoreria/piedras/baldosa-pizarra-negra.jpeg" alt="Imagen 7"></div>
+      <div class="grid-item"><img src="../marmoreria/piedras/marmol-blanco-ibiza-losa-baldosa-azulejo.jpg" alt="Imagen 8"></div>
+      <div class="grid-item"><img src="../marmoreria/piedras/granito-rosa-faro-losa.jpeg" alt="Imagen 9"></div>
+    </div>
+  </section>
+  <section class="mapa">
+
+      <!-- Aquí puedes insertar un mapa de Google Maps u otro mapa -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.065129139491!2d-51.1796225!3d-29.862395499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95196f66945ec01d%3A0x12a2e06153f07139!2sM%C3%A1rmores%20e%20granitos%20Grant&#39;s!5e0!3m2!1ses-419!2sbr!4v1709562801459!5m2!1ses-419!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+    
+    <!-- Sección de comentarios -->
+  <section class="comentarios">
+    <h2>Comentarios</h2>
+        <form action="procesar_comentarios.php" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+
+          <label for="comentario">Comentario:</label><br>
+          <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+          
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+      
+      <footer id="footer">
+        <div class="footer-container">
+          <div class="contact-info">
+            <h3>Entre em contato conosco</h3>
+            <p>Endereço: Endereço da sua empresa</p>
+            <p>Telefone: +123456789</p>
+            <p>E-mail: info@seudominio.com</p>
+          </div>
+          <div class="social-links">
+            <h3>Síguemos em:</h3>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/tu-instagram"><i class="fab fa-instagram"></i> Instagram
+                <img src="../marmoreria/piedras/logos/1658586823instagram-logo-transparent.png" alt="Instagram" style="width: 30px; height: 30px;">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/tu-facebook"><i class="fab fa-facebook"></i> Facebook<img src="piedras/logos/logo-do-facebook.png" alt="Facebook" style="width: 30px; height: 30px;"></a>
+              </li>
+              <li>
+                <a href="https://api.whatsapp.com/send?phone=555189559694"><i class="fab fa-whatsapp"></i> WhatsApp<img src="../marmoreria/piedras/logos/whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+    }
+  </script>
+
+  <script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    if (i === index) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+function nextSlide() {
+  currentSlide++;
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  }
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide--;
+  if (currentSlide < 0) {
+    currentSlide = slides.length - 1;
+  }
+  showSlide(currentSlide);
+}
+
+function cambiarSlide(index) {
+      currentSlide = index;
+      showSlide(currentSlide);
+    }
+
+// Mostrar el primer slide al cargar la página
+showSlide(currentSlide);
+  </script>
+
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const gridItems = document.querySelectorAll('.grid-item img');
+
+  gridItems.forEach((item, index) => {
+    item.addEventListener('click', function() {
+     //
+      console.log('Imagen' + (index + 1) + ' seleccionada');
+    });
+  });
+});
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const openInSameWindowLinks = document.querySelectorAll('#openInSameWindow');
+
+    openInSameWindowLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); // Evita el comportamiento predeterminado de abrir el enlace en una nueva pestaña
+        const href = this.getAttribute('href');
+        window.location.href = href; // Cambia la ubicación de la ventana actual al enlace href
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
